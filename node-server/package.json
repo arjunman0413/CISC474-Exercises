@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Ex4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "Cisc474"
+  ],
+  "author": "Arjun Manikyath",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
