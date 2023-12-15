@@ -59,19 +59,17 @@
                 type: 'DELETE',
                 success: function (result) {
                     console.log("Delete Returned");
-                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null,
-                        2) + "</pre>";
+                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null, 2) + "</pre>";
                 }
             });
         })
         $('#filterButton').click(function () {
             $.ajax({
-                url: '/api/v1/' + document.getElementById("filterUserNum").value,
+                url: '/api/v1/filterUser?user=' + document.getElementById("filterUserNum").value,
                 type: 'GET',
                 success: function (result) {
                     console.log("Filter Returned");
-                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null,
-                        2) + "</pre>";
+                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null, 2) + "</pre>";
                 }
             });
         })
@@ -84,8 +82,7 @@
                 type: 'POST',
                 success: function (result) {
                     console.log("Add Returned");
-                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null,
-                        2) + "</pre>";
+                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null, 2) + "</pre>";
                 }
             });
         })
@@ -94,8 +91,7 @@
                 url: '/api/v1/listUsers',
                 type: 'GET',
                 success: function (result) {
-                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null,
-                        2) + "</pre>";
+                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null, 2) + "</pre>";
                 }
             });
         })
@@ -104,8 +100,7 @@
                 url: '/api/v1/listUsers',
                 type: 'GET',
                 success: function (result) {
-                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null,
-                        2) + "</pre>";
+                    document.getElementById("users").innerHTML = "<pre>" + JSON.stringify(JSON.parse(result), null, 2) + "</pre>";
                 }
             });
         });
